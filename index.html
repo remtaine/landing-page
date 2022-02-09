@@ -4,9 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
+
+    <link rel="shortcut icon" href="/images/avatar.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> 
+    <script src="https://kit.fontawesome.com/33d6e1a458.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/d8f0c855f0.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
-    
+    <nav>
+        <a href="">Ben The Webdev</a>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#quotes">Quotes</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="text">
+            <h1>Hi, I'm Ben!</h1>
+            <p>Your friendly web developer, at your service!</p>
+            <ul>
+                <li><a href="https://github.com/remtaine"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://twitter.com/webdev_ben"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://remtaine.itch.io/"><i class="fa-brands fa-itch-io"></i></a></li>
+            </ul>
+        </div>
+        <img src="/images/avatar.png" alt="">
+    </header>
+    <main>
+        <div id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="list">
+                <div>
+                    <img src="/images/portfolio1.jpg" alt="">
+                    <h3>Medical Convention</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, fugiat labore facilis natus quis expedita et provident quae sunt, obcaecati error eveniet sapiente asperiores alias qui eos sequi perspiciatis nulla?</p>
+                </div>
+                <div>
+                    <img src="/images/portfolio1.jpg" alt="">
+
+                    <h3>Clothing Store</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut maxime totam itaque vero corporis quisquam minus quidem culpa. Optio repudiandae iste amet distinctio recusandae incidunt eaque vero similique rerum!</p>
+                </div>
+                <div>
+                    <img src="/images/portfolio1.jpg" alt="">
+
+                    <h3>Artist's Portfolio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laborum, error et eum corrupti saepe ipsum ea aliquam illum alias fuga excepturi praesentium, dolore hic vero est voluptatum officia iste.</p>
+                </div>
+                <div>
+                    <img src="/images/portfolio1.jpg" alt="">
+                    <h3>Banana</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem, dolore. Amet consectetur optio accusamus nam ea
+                    eaque, quibusdam nihil est quaerat porro necessita tibus!
+                    Assumenda doloribus, reiciendis quasi inventore tenetur
+                    ea.</p>
+                </div>
+            </div>
+        </div>
+        <div id="skills">
+            <h2>Skills</h2>
+            <div class="list">
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h3>Javascript</h3>
+                </div>
+                <div>
+                    <i class="devicon-html5-plain"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div>
+                    <i class="fa-brands fa-sass"></i>
+                    <h3>SASS</h3>
+                </div>
+                <div>
+                    <i class="devicon-css3-plain"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h3>Java</h3>
+                </div>
+                <div>
+                    <i class="devicon-godot-plain"></i>
+                    <h3>Godot</h3>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, laboriosam minima tenetur sapiente recusandae in earum saepe veritatis maiores sunt eos, exercitationem, vel nesciunt perspiciatis at ea amet rem?</p>
+        </div>
+        <div id="quotes">
+            <h2>Previous Clients</h2>
+            <blockquote>Ben worked on the website for our virtual convention, and it
+            went off without a hitch! -John G., Medical Officer</blockquote>
+        </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <!-- name email title content-->
+                    <div>
+                        <label for="">Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div>
+                        <label for="">Title</label>
+                        <input type="text" required>
+                    </div>
+                    <div>
+                        <label for="">Content</label>
+                        <input type="text" required>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer id="contact">Copyright © <a href="https://twitter.com/webdev_ben
+    ">Ben The Web Developer</a> 2022</footer>
 </body>
 </html>
