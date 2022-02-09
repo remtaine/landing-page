@@ -1,0 +1,178 @@
+:root {
+    --color-bg: #1F2937;
+    --color-bg2: #344052;
+    --color-text-main: #F9FAF8;
+    --color-text-secondary: #E5E7EB;
+    --color-text-logo: var(--color-text-main);
+    --color-button: #3882F6;
+    --color-info: #1F2937;
+    --color-quote-text: var(--color-info);
+    --color-quote-bg: var(--color-text-secondary);
+
+    --color1: #99ED81;
+    --color2: #459D63;
+    --color3: white;
+
+    --font-size-main: 48px;
+    --font-size-secondary: 18px;
+    --font-size-logo: 24px;
+    --font-size-info: 36px;
+    --font-size-quote: var(--font-size-info);
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--color3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--color-bg);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li a {
+    padding: 10px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    background-color: var(--color-bg2);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.fa-github:hover {
+    color:yellow;
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.fa-itch-io:hover {
+    color: #F25756;
+}
+
+header a:visited {
+    color: inherit;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    color: var(--color-text-main);
+    background-color:#1c5730;
+}
+
+header > * {
+    /* flex-grow: 1; */
+    flex-basis: 1;
+}
+header .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .text ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+header .text i {
+    font-size: 3rem;
+}
+
+header img {
+    flex-shrink: 0;
+    max-width: 50%;
+    box-shadow: ;
+}
+
+header h1, header p {
+    margin: 0;
+}
+
+h2, blockquote {
+    margin: 0;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: center;
+}
+
+main {
+    background-color: var(--color-bg2);
+    padding: 10px 0;
+}
+
+main .list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 30px;
+}
+
+main .list img {
+    width: 100%;
+}
+
+main .list p {
+    text-align: justify;
+    text-justify: inter-word;
+    /* hyphens: auto; */
+
+}
+
+#skills .list{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#skills .list > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+#skills .list i {
+    font-size: 5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: var(--color-bg);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+footer a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: var(--color-text-main);
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
