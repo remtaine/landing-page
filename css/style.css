@@ -30,8 +30,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: var(--color-bg);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #459D63;
+    /* box-shadow: #1F2937; */
+    box-shadow: 11px 12px 14px  rgba(0,0,0,0.1);
+    z-index: 10;
+    position: relative;
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: 0; */
 }
 
 nav a {
@@ -54,8 +60,14 @@ nav ul {
     gap: 10px;
 }
 
+.fa-brands {
+    transition: color 0.4s;
+    color: white;
+
+}
+
 .fa-github:hover {
-    color:yellow;
+    color:rgb(177, 19, 177);
 }
 
 .fa-twitter:hover {
@@ -75,7 +87,17 @@ header {
     padding: 20px;
     justify-content: space-around;
     color: var(--color-text-main);
-    background-color:#1c5730;
+    /* background-color:#1c5730; */
+
+    background: rgb(69,157,99);
+    background: linear-gradient(135deg, rgba(69,157,99,1) 37%, rgba(153,237,129,1) 90%);
+
+    /* background: rgb(69,157,99);
+    background: linear-gradient(239deg, rgba(69,157,99,1) 37%,
+    rgba(153,237,129,1) 90%);  */
+    
+    /* background: rgb(69,157,99);
+    background: linear-gradient(173deg, rgba(69,157,99,1) 40%, rgba(153,237,129,1) 100%);  */
 }
 
 header > * {
@@ -156,6 +178,33 @@ main .list p {
 }
 #skills .list i {
     font-size: 5rem;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+form {
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: 20px;
+}
+
+fieldset .list {
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 40vh;
+    /* margin: auto; */
+    margin-top: 10px;
 }
 
 footer {
