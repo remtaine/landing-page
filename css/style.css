@@ -132,8 +132,11 @@ header h1, header p {
     margin: 0;
 }
 
-h2, blockquote {
+h2, #about p {
     margin: 0;
+    margin-left: 30px;
+    margin-top: 20px;
+
 }
 
 blockquote {
@@ -149,6 +152,7 @@ main {
 main .list {
     display: flex;
     justify-content: space-around;
+    /* flex-wrap: wrap; */
     gap: 30px;
     margin: 30px;
 }
@@ -167,6 +171,7 @@ main .list p {
 #skills .list{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
