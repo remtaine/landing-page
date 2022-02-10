@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Ben | Landing Page</title>
 
     <link rel="shortcut icon" href="/images/avatar.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/normalize.css">
@@ -18,10 +18,11 @@
     <nav>
         <a href="">Ben The Webdev</a>
         <ul>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#quotes">Quotes</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -38,6 +39,23 @@
         <img src="/images/avatar.png" alt="">
     </header>
     <main>
+        <div class="image-bg img1" id="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+            aliquid, laboriosam minima tenetur sapiente recusandae in earum
+            saepe veritatis maiores sunt eos, exercitationem, vel nesciunt
+            perspiciatis at ea amet rem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta neque libero fuga itaque ullam quos praesentium odio, sint sed delectus a dicta minima modi sunt quibusdam facilis eius atque assumenda?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Blanditiis aliquam eius, quis nesciunt rem vel voluptatibus quae at
+            non ea perferendis temporibus. Beatae, ad debitis eum ullam iste
+            eveniet id Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Maiores, ipsum eius. Excepturi dolorum ullam reiciendis accusamus
+            sunt! Dolorem non, quam perspiciatis, eum facere est eveniet
+            inventore sapiente ipsum voluptatibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsam voluptatem veritatis error sit dolorum suscipit alias magnam pariatur consequuntur? Repellendus, rerum ratione exercitationem excepturi velit quasi fuga rem delectus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            harum quis aperiam suscipit laudantium, laboriosam, ex enim ab culpa
+            ut quas quia eius itaque at est quisquam odio quo ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus saepe minus unde amet illum incidunt magnam fugiat esse odit? Consectetur, reprehenderit quidem! Maiores non illum corrupti. Repellat ea voluptas accusantium!</p>
+        </div>
         <div id="portfolio">
             <h2>Portfolio</h2>
             <div class="list">
@@ -68,6 +86,11 @@
                     ea.</p>
                 </div>
             </div>
+        </div>
+        <div class="image-bg img2" id="quotes">
+            <h2>Previous Clients</h2>
+            <blockquote>Ben worked on the website for our virtual convention, and it
+            went off without a hitch! -John G., Medical Officer</blockquote>
         </div>
         <div id="skills">
             <h2>Skills</h2>
@@ -106,40 +129,29 @@
                 </div>
             </div>
         </div>
-        <div id="about">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, laboriosam minima tenetur sapiente recusandae in earum saepe veritatis maiores sunt eos, exercitationem, vel nesciunt perspiciatis at ea amet rem?</p>
-        </div>
-        <div id="quotes">
-            <h2>Previous Clients</h2>
-            <blockquote>Ben worked on the website for our virtual convention, and it
-            went off without a hitch! -John G., Medical Officer</blockquote>
-        </div>
-        <div>
-            <form action="">
-                <fieldset>
-                    <legend>Contact Me</legend>
-                    <!-- name email title content-->
-                    <div class="list">
-                        <div>
-                            <label for="">Name:</label>
-                            <input type="text" required>
-                        </div>
-                        <div>
-                            <label for="">Email:</label>
-                            <input type="email" required>
-                        </div>
-                        <div>
-                            <label for="">Title:</label>
-                            <input type="text" required>
-                        </div>
+        <form action="" class="image-bg img3">
+            <fieldset>
+                <h2>Contact Me</h2>
+                <!-- name email title content-->
+                <div class="list">
+                    <div>
+                        <label for="">Name:</label>
+                        <input type="text" required>
                     </div>
                     <div>
-                        <textarea></textarea>
+                        <label for="">Email:</label>
+                        <input type="email" required>
                     </div>
-                </fieldset>
-            </form>
-        </div>
+                    <div>
+                        <label for="">Title:</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div>
+                    <textarea></textarea>
+                </div>
+            </fieldset>
+        </form>
     </main>
     <footer id="contact">Copyright © <a href="https://twitter.com/webdev_ben
     ">Ben The Web Developer</a> 2022</footer>
