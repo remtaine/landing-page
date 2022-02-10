@@ -47,11 +47,12 @@ nav a {
 
 nav li a {
     padding: 10px;
+    transition: background-color 0.3s;
 }
 
 nav li a:hover {
     text-decoration: underline;
-    background-color: var(--color-bg2);
+    background-color: var(--color1);
 }
 
 nav ul {
@@ -61,7 +62,7 @@ nav ul {
 }
 
 .fa-brands {
-    transition: color 0.4s;
+    transition: color 0.3s;
     color: white;
 
 }
@@ -135,7 +136,7 @@ header h1, header p {
 h2, #about p {
     margin: 0;
     margin-left: 30px;
-    margin-top: 20px;
+    padding-top: 20px;
 
 }
 
@@ -144,9 +145,33 @@ blockquote {
     text-align: center;
 }
 
+.image-bg {
+    min-height: 75vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.image-bg.img1 {
+    background-image: url("/images/laptop1.jpg");
+    backdrop-filter: blur(8px);
+    /* --webkit-backdrop-filter: blur(8px); */
+}
+
+.image-bg.img1::after {
+    /* filter: brightness(100%); */
+}
+
+.image-bg.img2 {
+    background-image: url("/images/laptop2.jpg");
+}
+
+.image-bg.img3 {
+    background-image: url("/images/laptop3.jpg");
+}
+
 main {
-    background-color: var(--color-bg2);
-    padding: 10px 0;
+    background-color: var(--color2);
+    /* padding: 10px 0; */
 }
 
 main .list {
@@ -165,7 +190,6 @@ main .list p {
     text-align: justify;
     text-justify: inter-word;
     /* hyphens: auto; */
-
 }
 
 #skills .list{
@@ -193,9 +217,21 @@ h3 {
 form {
     /* display: flex; */
     /* justify-content: center; */
-    margin: 20px;
+    /* margin: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+fieldset {
+    background-color:#6ec756ad;
+}
+
+fieldset h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
 fieldset .list {
     margin: 0;
     display: flex;
@@ -216,7 +252,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    background-color: var(--color-bg);
+    background-color: var(--color2);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
